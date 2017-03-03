@@ -1,0 +1,77 @@
+<krpano>
+	<action name="skin_addthumbs">
+		if(skin_settings.thumbs == false,
+			set(layer[skin_btn_thumbs].visible,false);
+		  ,
+			copy(thumbwidth, skin_settings.thumbs_width);
+			copy(thumbheight, skin_settings.thumbs_height);
+			copy(thumbpadding, skin_settings.thumbs_padding);
+			copy(thumbcrop, skin_settings.thumbs_crop);
+
+			add(thumbxoffset, thumbwidth, thumbpadding);
+			mul(thumbxcenter, thumbxoffset, 0.5);
+			mul(thumbbarwidth, thumbxoffset, scene.count);
+			add(thumbbarwidth, thumbpadding);
+			add(thumbbarheight, thumbpadding, thumbheight);
+			add(thumbbarheight, thumbpadding);
+
+			if(skin_settings.thumbs_scrollindicator,
+				copy(layer[skin_thumbs_scrollindicator].y, thumbbarheight);
+				add(thumbbarheight, layer[skin_thumbs_scrollindicator].height);
+			);
+
+			copy(layer[skin_thumbs].height, thumbbarheight);
+			copy(layer[skin_thumbs].width, thumbbarwidth);
+
+			mul(halfheight, thumbbarheight, 0.5);
+			copy(layer[skin_thumbs_scrollleft].y, halfheight);
+			copy(layer[skin_thumbs_scrollright].y, halfheight);
+
+			set(thumb_cnt,0);
+			for(set(i,0), i LT scene.count, inc(i),
+				inc(thumb_cnt);
+				txtadd(thumbname,'skin_thumb_',get(i));
+				addlayer(get(thumbname));
+				copy(layer[get(thumbname)].url, scene[get(i)].thumburl);
+				set(layer[get(thumbname)].keep, true);
+				set(layer[get(thumbname)].parent, 'skin_thumbs');
+				set(layer[get(thumbname)].align, lefttop);
+				copy(layer[get(thumbname)].crop, thumbcrop);
+				copy(layer[get(thumbname)].width, thumbwidth);
+				copy(layer[get(thumbname)].height, thumbheight);
+				mul(thumbx, i, thumbxoffset);
+				add(thumbx, thumbpadding);
+				copy(layer[get(thumbname)].x, thumbx);
+				copy(layer[get(thumbname)].y, thumbpadding);
+				add(scene[get(i)].thumbx, thumbx, thumbxcenter);
+				copy(scene[get(i)].thumby, thumbpadding);
+				set(layer[get(thumbname)].linkedscene, get(scene[get(i)].name) );
+				set(layer[get(thumbname)].onclick, copy(layer[skin_thumbborder].parent, name); loadscene(get(linkedscene),null,get(skin_settings.loadscene_flags),get(skin_settings.loadscene_blend)); );
+				if(skin_settings.tooltips_thumbs,
+					set(layer[get(thumbname)].tooltip, get(scene[get(i)].title) );
+					layer[get(thumbname)].loadstyle(skin_tooltips);
+				  );
+				if(skin_settings.thumbs_text,
+					txtadd(thumbtext, 'skin_thumbtext_', get(i));
+					addlayer(get(thumbtext));
+					layer[get(thumbtext)].loadstyle(skin_thumbtext_style);
+					set(layer[get(thumbtext)].keep, true);
+					set(layer[get(thumbtext)].parent, get(thumbname));
+					set(layer[get(thumbtext)].html, get(scene[get(i)].title));
+				  );
+			   );
+
+		  );
+	</action>
+	
+	<!-- change title font style -->
+	<layer name="skin_layer">
+		<layer name="skin_scroll_window">
+			<layer name="skin_scroll_layer">
+				<layer name="skin_title" x="4" y="0" css="calc:skin_settings.design_text_css + ' text-align:left; font-size:16px;'" textshadow="2" />
+			</layer>
+		</layer>
+	</layer>
+
+	<skin_settings thumbs_scrollbuttons="true" thumbs_scrollindicator="true" thumbs_width="90" thumbs_height="90" />
+	</krpano>

@@ -1,0 +1,193 @@
+<krpano title="&#19977;&#37324;&#23663;&#22826;&#21476;&#37324;" version="1.19">
+
+	<include url="skin/vtourskin.xml" />
+
+
+	
+	<skin_settings controlbar_height="40" controlbar_offset="20" controlbar_offset_closed="-40" controlbar_overlap.fractionalscaling="0" controlbar_overlap.no-fractionalscaling="10" controlbar_width="-24" deeplinking="false" design_bgalpha="0.8" design_bgborder="0" design_bgcolor="0x2D3E50" design_bgroundedge="1" design_bgshadow="0 4 10 0x000000 0.3" design_skin_images="vtourskin.png" design_text_css="color:#FFFFFF; font-family:Arial;" design_text_shadow="1" design_thumbborder_bgborder="3 0xFFFFFF 1.0" design_thumbborder_bgroundedge="0" design_thumbborder_padding="2" gyro="true" layout_maxwidth="814" layout_width="100%" littleplanetintro="true" loadingtext="loading..." loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)" loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)" loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)" loadscene_flags="MERGE" maps="false" maps_bing_api_key="" maps_type="google" maps_zoombuttons="false" thumbs="true" thumbs_crop="0|40|240|160" thumbs_dragging="true" thumbs_height="80" thumbs_loop="false" thumbs_onhoverscrolling="false" thumbs_opened="true" thumbs_padding="10" thumbs_scrollbuttons="false" thumbs_scrollindicator="false" thumbs_text="true" thumbs_width="120" title="true" tooltips_buttons="false" tooltips_hotspots="false" tooltips_mapspots="false" tooltips_thumbs="false" webvr="true" />
+	
+
+	<layer align="lefttop" background="false" border="false" enabled="true" keep="true" name="skin_back" onclick="js(history.go(-1))" scale.desktop="1" scale.mobile="0.6" type="image" url="attach/back.png" visible="true" x="10" y="10" y.mobile="7.0" width="50" height="50" />
+	
+	<action autorun="onstart" name="startup">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+
+	<scene heading="" lat="" lng="" name="scene_Uc0B2HQu" onstart="" sound="" thumburl="panos/Uc0B2HQu.tiles/thumb.jpg" title="GODIVA">
+
+		<view fov="120.000" fovmax="140" fovmin="70" fovtype="MFOV" hlookat="12.421" hlookatmax="180" hlookatmin="-180" limitview="auto" maxpixelzoom="2.0" vlookat="-0.930" vlookatmax="90" vlookatmin="-90" />
+
+		<preview url="panos/Uc0B2HQu.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Uc0B2HQu.tiles/pano_%s.jpg" />
+
+			<cube devices="mobile" url="panos/Uc0B2HQu.tiles/mobile/pano_%s.jpg" />
+		</image>
+		<hotspot ath="115.410" atv="5.654" linkedscene="scene_ayi1ajoy" name="spot1" style="skin_hotspotstyle" />
+
+		
+
+	</scene>
+
+	<scene heading="" lat="" lng="" name="scene_ayI1AJOY" onstart="" sound="" thumburl="panos/ayI1AJOY.tiles/thumb.jpg" title="B+AB">
+
+		<view fov="140.000" fovmax="140" fovmin="70" fovtype="MFOV" hlookat="1.991" hlookatmax="180" hlookatmin="-180" limitview="auto" maxpixelzoom="2.0" vlookat="0.300" vlookatmax="90" vlookatmin="-90" />
+
+		<preview url="panos/ayI1AJOY.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/ayI1AJOY.tiles/pano_%s.jpg" />
+
+			<cube devices="mobile" url="panos/ayI1AJOY.tiles/mobile/pano_%s.jpg" />
+		</image>
+		<hotspot ath="-72.352" atv="10.313" linkedscene="scene_l5tkykcq" name="spot1" style="skin_hotspotstyle" />
+
+		
+
+	</scene>
+
+	<scene heading="" lat="" lng="" name="scene_l5tKykCQ" onstart="" sound="" thumburl="panos/l5tKykCQ.tiles/thumb.jpg" title="PRGEONE">
+
+		<view fov="132.227" fovmax="140" fovmin="70" fovtype="MFOV" hlookat="-330.094" hlookatmax="180" hlookatmin="-180" limitview="auto" maxpixelzoom="2.0" vlookat="-0.965" vlookatmax="90" vlookatmin="-90" />
+
+		<preview url="panos/l5tKykCQ.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/l5tKykCQ.tiles/pano_%s.jpg" />
+
+			<cube devices="mobile" url="panos/l5tKykCQ.tiles/mobile/pano_%s.jpg" />
+		</image>
+		<hotspot ath="-76.439" atv="13.188" linkedscene="scene_3wqeyotx" name="spot1" style="skin_hotspotstyle" />
+
+		
+
+	</scene>
+
+	<scene heading="" lat="" lng="" name="scene_3wQEyOTX" onstart="" sound="" thumburl="panos/3wQEyOTX.tiles/thumb.jpg" title="adidas">
+
+		<view fov="140.000" fovmax="140" fovmin="70" fovtype="MFOV" hlookat="-76.839" hlookatmax="180" hlookatmin="-180" limitview="auto" maxpixelzoom="2.0" vlookat="-1.576" vlookatmax="90" vlookatmin="-90" />
+
+		<preview url="panos/3wQEyOTX.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/3wQEyOTX.tiles/pano_%s.jpg" />
+
+			<cube devices="mobile" url="panos/3wQEyOTX.tiles/mobile/pano_%s.jpg" />
+		</image>
+		<hotspot ath="-100.996" atv="14.292" linkedscene="scene_aywxgc2h" name="spot1" style="skin_hotspotstyle" />
+
+		
+
+	</scene>
+
+	<scene heading="" lat="" lng="" name="scene_aYwXgC2h" onstart="" sound="" thumburl="panos/aYwXgC2h.tiles/thumb.jpg" title="APPLE">
+
+		<view fov="120.000" fovmax="140" fovmin="70" fovtype="MFOV" hlookat="-19.029" hlookatmax="180" hlookatmin="-180" limitview="auto" maxpixelzoom="2.0" vlookat="-2.542" vlookatmax="90" vlookatmin="-90" />
+
+		<preview url="panos/aYwXgC2h.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/aYwXgC2h.tiles/pano_%s.jpg" />
+
+			<cube devices="mobile" url="panos/aYwXgC2h.tiles/mobile/pano_%s.jpg" />
+		</image>
+		<hotspot ath="137.738" atv="10.694" linkedscene="scene_6nvkjfdm" name="spot1" style="skin_hotspotstyle" />
+
+		
+
+	</scene>
+
+	<scene heading="" lat="" lng="" name="scene_6nvkJfDm" onstart="" sound="" thumburl="panos/6nvkJfDm.tiles/thumb.jpg" title="miffy">
+
+		<view fov="139.922" fovmax="140" fovmin="70" fovtype="MFOV" hlookat="4.362" hlookatmax="180" hlookatmin="-180" limitview="auto" maxpixelzoom="2.0" vlookat="0.076" vlookatmax="90" vlookatmin="-90" />
+
+		<preview url="panos/6nvkJfDm.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/6nvkJfDm.tiles/pano_%s.jpg" />
+
+			<cube devices="mobile" url="panos/6nvkJfDm.tiles/mobile/pano_%s.jpg" />
+		</image>
+		<hotspot ath="-83.733" atv="19.329" linkedscene="scene_gvcoxewm" name="spot1" style="skin_hotspotstyle" />
+
+		
+
+	</scene>
+
+	<scene heading="" lat="" lng="" name="scene_gvcoXewM" onstart="" sound="" thumburl="panos/gvcoXewM.tiles/thumb.jpg" title="IT">
+
+		<view fov="132.227" fovmax="140" fovmin="70" fovtype="MFOV" hlookat="6.951" hlookatmax="180" hlookatmin="-180" limitview="auto" maxpixelzoom="2.0" vlookat="2.894" vlookatmax="90" vlookatmin="-90" />
+
+		<preview url="panos/gvcoXewM.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/gvcoXewM.tiles/pano_%s.jpg" />
+
+			<cube devices="mobile" url="panos/gvcoXewM.tiles/mobile/pano_%s.jpg" />
+		</image>
+		<hotspot ath="-78.775" atv="17.450" linkedscene="scene_8xroqlui" name="spot1" style="skin_hotspotstyle" />
+
+		
+
+	</scene>
+
+	<scene heading="" lat="" lng="" name="scene_8xRoqlUI" onstart="" sound="" thumburl="panos/8xRoqlUI.tiles/thumb.jpg" title="&#26143;&#24052;&#20811;">
+
+		<view fov="132.227" fovmax="140" fovmin="70" fovtype="MFOV" hlookat="-3.908" hlookatmax="180" hlookatmin="-180" limitview="auto" maxpixelzoom="2.0" vlookat="0.806" vlookatmax="90" vlookatmin="-90" />
+
+		<preview url="panos/8xRoqlUI.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/8xRoqlUI.tiles/pano_%s.jpg" />
+
+			<cube devices="mobile" url="panos/8xRoqlUI.tiles/mobile/pano_%s.jpg" />
+		</image>
+		<hotspot ath="-100.546" atv="20.844" linkedscene="scene_zsnry6fg" name="spot1" style="skin_hotspotstyle" />
+		
+
+		
+
+	</scene>
+
+	<scene heading="" lat="" lng="" name="scene_ZSNrY6Fg" onstart="" sound="" thumburl="panos/ZSNrY6Fg.tiles/thumb.jpg" title="&#22826;&#21476;&#37324;&#24191;&#22330;">
+
+		<view fov="140.000" fovmax="140" fovmin="70" fovtype="MFOV" hlookat="62.521" hlookatmax="180" hlookatmin="-180" limitview="auto" maxpixelzoom="2.0" vlookat="5.331" vlookatmax="90" vlookatmin="-90" />
+
+		<preview url="panos/ZSNrY6Fg.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/ZSNrY6Fg.tiles/pano_%s.jpg" />
+
+			<cube devices="mobile" url="panos/ZSNrY6Fg.tiles/mobile/pano_%s.jpg" />
+		</image>
+		<hotspot ath="-28.915" atv="17.056" linkedscene="scene_s5fmpq79" name="spot1" style="skin_hotspotstyle" />
+
+		
+
+	</scene>
+
+
+<scene heading="" lat="" lng="" name="scene_S5fMPq79" onstart="" sound="" thumburl="panos/S5fMPq79.tiles/thumb.jpg" title="CARIBE">
+
+		<view fov="140.000" fovmax="140" fovmin="70" fovtype="MFOV" hlookat="18.413" hlookatmax="180" hlookatmin="-180" limitview="auto" maxpixelzoom="2.0" vlookat="-0.553" vlookatmax="90" vlookatmin="-90" />
+
+		<preview url="panos/S5fMPq79.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/S5fMPq79.tiles/pano_%s.jpg" />
+
+			<cube devices="mobile" url="panos/S5fMPq79.tiles/mobile/pano_%s.jpg" />
+		</image>
+		<hotspot ath="98.289" atv="20.215" linkedscene="scene_9tmpcw6d" name="spot1" style="skin_hotspotstyle" />
+
+		
+
+	</scene>
+
+	<exdata pubdate="20161124" publisher="menglina" /><autorotate enabled="true" speed="2.0" waittime="1.0" /><layer align="righttop" background="false" border="false" enabled="true" keep="true" name="skin_taagoo" onclick="openurl(http://www.taagoo.com,_blank);" scale.desktop="1" scale.mobile="0.6" type="image" url="attach/taagoo_logo.png" visible="true" x="10" y="10" y.mobile="7.0" /><layer align="righttop" alpha="0.5" background="false" border="false" devices="ios|android" enabled="true" html="&#30005;&#35805;&#65306;010-88122992" keep="true" name="skin_call" number="010-88122992" onclick="openurl(tel:010-88122992, _self);" scale.desktop="1" scale.mobile="0.7" url="attach/call.png" x="10" y="73" y.mobile="51.099999999999994" />
+	<!-- <include name="panoskin" url="skin/vtourskin_design_ultra_light.xml" value="4" /><include url="attach/preload_skin.xml" /><include url="attach/chineselize.xml" /><include url="attach/text_hotspot.xml" /> -->
+	<include name="panoskin" url="skin/vtourskin_design_ultra_light.xml" value="4" />
+</krpano>
