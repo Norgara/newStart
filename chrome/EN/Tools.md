@@ -1,5 +1,6 @@
-## Getting Started  
+## [Getting Started](https://developers.google.com/web/tools/setup/ "入门指南")  
 Set up your workspace to include a good editor, debugging, and build tools for the multi-device web.  
+> 让您的工作区包含适用于多设备网页的优秀编辑器、调试功能和构建工具
 Time is a huge factor in staying productive. Your development environment is where you spend most of yours. Set yourself up for success by including a strong, extensible editor and powerful debugging & development tools.  
 * [Setup Your Editor](https://developers.google.com/web/tools/setup/setup-editor "设置你的编辑器")  
 * Setup Persistence with DevTools Workspaces  
