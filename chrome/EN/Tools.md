@@ -1,0 +1,10 @@
+## Getting Started  
+Set up your workspace to include a good editor, debugging, and build tools for the multi-device web.  
+Time is a huge factor in staying productive. Your development environment is where you spend most of yours. Set yourself up for success by including a strong, extensible editor and powerful debugging & development tools.  
+* [Setup Your Editor](https://developers.google.com/web/tools/setup/setup-editor "设置你的编辑器")  
+* Setup Persistence with DevTools Workspaces  
+* Setup CSS and JS Preprocessors  
+* Setup Command Line Shortcuts  
+* Setup Browser Extensions  
+* Setup Your Build Tools  
+When you're done, continue to learn more about the Chrome Developer Tools (DevTools), Chrome's built-in tool that helps you develop, test, and debug your pages.
