@@ -1,5 +1,6 @@
 ## Prepare
-[从Chrome源码看JS Object的实现](http://www.renfed.com/2017/04/04/chrome-object/)
+[从Chrome源码看JS Object的实现](http://www.renfed.com/2017/04/04/chrome-object/)  
+[从移动端click到摇一摇](https://zhuanlan.zhihu.com/p/28052894?group_id=872430068687835136)
 ## Questions
 [我的前端进阶之路](https://juejin.im/post/591afe90128fe1005ce339f7)  
 [阿里、网易、滴滴共十次前端面试碰到的问题](https://juejin.im/post/59316e682f301e0058378558)  
